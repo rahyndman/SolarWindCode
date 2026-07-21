@@ -1,0 +1,22 @@
+"""
+Importing sunpy and other packages
+"""
+
+from sunpy.net import Fido
+from sunpy.net import attrs as a
+from sunpy.timeseries import TimeSeries 
+from sunpy.time import parse_time
+from sunpy.data import cache
+from sunpy.coordinates import spice, frames
+from sunpy.coordinates import get_horizons_coord, get_body_heliographic_stonyhurst
+
+
+from astropy import units as u
+from astropy.time import Time
+
+
+import matplotlib.pyplot as plt
+import numpy as np 
+
+# uncomment line below to see what datasets are available to query from the CDAWeb
+# a.cdaweb.Dataset
